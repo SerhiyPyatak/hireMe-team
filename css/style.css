@@ -1,55 +1,17 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "../node_modules/normalize-scss/sass/normalize/import-now";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\style.scss 1:9  root stylesheet */
 
-/* Scripting
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-template {
-  display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-  display: none;
-}
-
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.clients {
-  background-color: #f1f8ff;
-}
-
-.clients-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.clients-content__logo {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 100px;
-}
-.clients-content__title {
-  color: #3677fd;
-  font-family: Lato;
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 35.12px;
-  text-align: center;
-  padding-top: 55px;
-  padding-bottom: 90px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"../node_modules/normalize-scss/sass/normalize/import-now\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 1:9  root stylesheet";
 }
