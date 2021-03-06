@@ -456,4 +456,28 @@ body {
   padding: 0;
 }
 
+.clients {
+  background-color: #f1f8ff;
+}
+
+.clients-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clients-content__logo {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.clients-content__title {
+  color: #3677fd;
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 35.12px;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 90px;
+}
+
 /*# sourceMappingURL=style.css.map */
