@@ -1,0 +1,72 @@
+.welcome {
+  width: 2000px;
+  height: 872px;
+  background-image: linear-gradient(51deg, #3595ff 0%, #3564fc 100%);
+  margin: 0 auto;
+}
+.welcome__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/welcome-rays.png") no-repeat center;
+  background-size: cover;
+}
+.welcome__photo {
+  width: 180px;
+  height: 180px;
+  background: url("../img/welcome-profile.png") no-repeat center;
+  background-size: contain;
+}
+.welcome__header {
+  max-width: 825px;
+  margin: 40px auto;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 60px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+}
+.welcome__description {
+  max-width: 774px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+}
+.welcome__button {
+  line-height: 48px;
+  margin: 75px auto;
+  width: 204px;
+  height: 55px;
+  border-radius: 27px;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #3695ff;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+}
+.welcome__arrow-down {
+  position: absolute;
+  bottom: 30px;
+  width: 24px;
+  height: 36px;
+  background: url("../img/welcome-arrow.png") no-repeat center;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=welcome.css.map */

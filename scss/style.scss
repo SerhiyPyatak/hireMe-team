@@ -1,6 +1,7 @@
 @import "../node_modules/normalize-scss/sass/normalize/import-now";
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import "welcome.scss";
 
 body {
     box-sizing: border-box;
@@ -157,5 +158,31 @@ body {
                }
             }
         }
+    }
+}
+
+.clients {
+    background-color: #f1f8ff;
+}
+
+.clients-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__logo {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 100px;
+    }
+
+    &__title {
+        color: #3677fd;
+        font-family: Lato;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 35.12px;
+        text-align: center;
+        padding-top: 55px;
+        padding-bottom: 90px;
     }
 }
