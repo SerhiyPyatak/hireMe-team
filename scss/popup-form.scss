@@ -1,0 +1,56 @@
+.popup-form {
+    width:              820px;
+    height:             auto;
+    margin:             auto;
+    border:             1px solid blue;
+    border-radius:      10px;
+    padding:            65px 145px;
+    box-sizing:         border-box;
+}
+
+.form {
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+
+    &__header {
+        width:          100%;
+        text-align:     center;
+        font-size:      35px;
+        font-weight:    400;
+        letter-spacing: 5px;
+        color:          rgb(54, 119, 253);
+        margin:         60px 0;
+    }
+
+    & input:not(.form__usermsg) {
+        border:         1px solid rgb(183, 192, 201);
+        border-radius:  10px;
+        height:         45px;
+        width:          100%;
+        margin:         15px 0;
+        outline:        none;
+    }
+
+    &__usermsg {
+        border:         1px solid rgb(183, 192, 201);
+        border-radius:  10px;
+        height:         180px;
+        width:          100%;
+        margin:         15px 0;
+        outline:        none;
+    }
+
+    &__submit {
+        margin:         45px;
+        width:          205px;
+        height:         55px;
+        border-radius:  25px;
+        background-color: rgb(53, 110, 253);
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
