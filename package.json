@@ -1,0 +1,16 @@
+{
+  "name": "sass-boilerplate",
+  "version": "1.0.0",
+  "description": "empty sass project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/:css/ --watch"
+  },
+  "author": "Serhii Piatak",
+  "license": "ISC",
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.32.8"
+  }
+}
