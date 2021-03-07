@@ -4,6 +4,7 @@
 @import "expert-in.scss";
 @import "welcome.scss";
 @import "latest-works.scss";
+@import "clients.scss";
 
 body {
     box-sizing: border-box;
@@ -235,58 +236,3 @@ body {
         }
     }
 }
-
-.clients {
-    background-color: #f1f8ff;
-}
-
-.clients-content {
-    max-width: 1200px;
-    margin: 0 auto;
-
-    &__logo {
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 100px;
-    }
-
-    &__title {
-        color: #3677fd;
-        font-family: Lato;
-        font-size: 50px;
-        font-weight: 300;
-        line-height: 35.12px;
-        text-align: center;
-        padding-top: 55px;
-        padding-bottom: 90px;
-    }
-}
-
-@media (max-width: 992px) {
-    .clients-content {
-
-        &__title {
-            font-family: 'Lato';
-            font-size: 34px;
-            color: #3677FD;
-            font-weight: 300;
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        &__logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            padding-bottom: 50px;
-            img {
-                width: 20%; 
-            }
-        }
-    }
-
-}
-
-@media (max-width: 768px) {}
-@media (max-width: 576px) {}

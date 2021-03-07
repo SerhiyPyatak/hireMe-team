@@ -28,7 +28,13 @@
 }
 
 @media (max-width: 992px) {
+
     .clients-content {
+
+        &__title h2 {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
 
         &__title {
             font-size: 28px;
@@ -52,13 +58,18 @@
 
 }
 
-@media (max-width: 768px) {}
+/* @media (max-width: 893px) {
+    .clients-content__title h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+} */
 
 @media (max-width: 576px) {
     .clients-content {
 
         &__title {
-            font-size: 22px;
+            font-size: 28px;
             padding: 20px 0;
         }
 
