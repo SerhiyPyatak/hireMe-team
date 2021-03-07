@@ -473,6 +473,11 @@ template {
   line-height: 35.12px;
   margin: 10% 0;
 }
+@media (min-width: 577px) and (max-width: 768px) {
+  .expert-in__headline {
+    font-size: 45px;
+  }
+}
 @media (max-width: 400px) {
   .expert-in__headline {
     font-size: 45px;
@@ -484,6 +489,13 @@ template {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 401px) and (max-width: 576px) {
+  .expert-in__items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 400px) {
   .expert-in__items {
     flex-direction: column;
@@ -491,7 +503,7 @@ template {
     justify-content: center;
   }
 }
-.expert-in__items .item {
+.expert-in__items .expert-item {
   width: 25.5%;
   display: flex;
   flex-direction: column;
@@ -500,13 +512,24 @@ template {
   padding: 0 3%;
   margin-bottom: 10%;
 }
+@media (min-width: 675px) and (max-width: 799px) {
+  .expert-in__items .expert-item {
+    width: 40%;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 401px) and (max-width: 674px) {
+  .expert-in__items .expert-item {
+    width: 80%;
+  }
+}
 @media (max-width: 400px) {
-  .expert-in__items .item {
+  .expert-in__items .expert-item {
     width: 90%;
     margin-bottom: 15%;
   }
 }
-.expert-in__items .item__img {
+.expert-in__items .expert-item__img {
   width: 146px;
   height: 146px;
   border: 1px solid lightgray;
@@ -515,18 +538,51 @@ template {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 800px) and (max-width: 992px) {
+  .expert-in__items .expert-item__img {
+    width: 116.8px;
+    height: 116.8px;
+  }
+}
+@media (min-width: 577px) and (max-width: 799px) {
+  .expert-in__items .expert-item__img {
+    width: 109.5px;
+    height: 109.5px;
+  }
+}
+@media (min-width: 401px) and (max-width: 576px) {
+  .expert-in__items .expert-item__img {
+    width: 97.2px;
+    height: 97.2px;
+  }
+}
 @media (max-width: 400px) {
-  .expert-in__items .item__img {
+  .expert-in__items .expert-item__img {
     width: 73px;
     height: 73px;
   }
 }
-@media (max-width: 400px) {
-  .expert-in__items .item__img img {
-    width: 55%;
+@media (min-width: 800px) and (max-width: 992px) {
+  .expert-in__items .expert-item__img img {
+    width: 45%;
   }
 }
-.expert-in__items .item__name {
+@media (min-width: 577px) and (max-width: 799px) {
+  .expert-in__items .expert-item__img img {
+    width: 45%;
+  }
+}
+@media (min-width: 401px) and (max-width: 576px) {
+  .expert-in__items .expert-item__img img {
+    width: 45%;
+  }
+}
+@media (max-width: 400px) {
+  .expert-in__items .expert-item__img img {
+    width: 45%;
+  }
+}
+.expert-in__items .expert-item__name {
   color: #3677fd;
   font-family: Lato;
   font-size: 24px;
@@ -536,13 +592,30 @@ template {
   text-transform: uppercase;
   margin: 15% 0 5% 0;
 }
+@media (min-width: 800px) and (max-width: 992px) {
+  .expert-in__items .expert-item__name {
+    font-size: 22px;
+  }
+}
+@media (min-width: 675px) and (max-width: 799px) {
+  .expert-in__items .expert-item__name {
+    font-size: 22px;
+    margin: 15% 0 5% 0;
+  }
+}
+@media (min-width: 401px) and (max-width: 674px) {
+  .expert-in__items .expert-item__name {
+    font-size: 21px;
+    margin: 5% 0;
+  }
+}
 @media (max-width: 400px) {
-  .expert-in__items .item__name {
+  .expert-in__items .expert-item__name {
     font-size: 20px;
     margin: 5% 0;
   }
 }
-.expert-in__items .item__text {
+.expert-in__items .expert-item__text {
   color: #5a5a5a;
   font-family: Lato;
   font-size: 16px;
@@ -550,9 +623,25 @@ template {
   line-height: 35px;
   text-align: center;
 }
-@media (max-width: 400px) {
-  .expert-in__items .item__text {
+@media (min-width: 577px) and (max-width: 799px) {
+  .expert-in__items .expert-item__text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 401px) and (max-width: 576px) {
+  .expert-in__items .expert-item__text {
     font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .expert-in__items .expert-item__text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 401px) and (max-width: 576px) {
+  .expert-in__items .item:nth-child(even) {
+    background-color: #ffffff;
+    padding: 2% 0;
   }
 }
 @media (max-width: 400px) {
