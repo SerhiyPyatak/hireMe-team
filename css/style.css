@@ -1026,4 +1026,25 @@ body {
   padding-bottom: 90px;
 }
 
+@media (max-width: 992px) {
+  .clients-content__title {
+    font-family: "Lato";
+    font-size: 34px;
+    color: #3677FD;
+    font-weight: 300;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .clients-content__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 50px;
+  }
+  .clients-content__logo img {
+    width: 20%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
