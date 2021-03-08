@@ -25,6 +25,10 @@
 }
 
 @media (max-width: 992px) {
+  .clients-content__title h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .clients-content__title {
     font-size: 28px;
     padding: 20px 0;
@@ -43,9 +47,15 @@
     align-items: center;
   }
 }
+/* @media (max-width: 893px) {
+    .clients-content__title h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+} */
 @media (max-width: 576px) {
   .clients-content__title {
-    font-size: 22px;
+    font-size: 28px;
     padding: 20px 0;
   }
   .clients-content__logo {

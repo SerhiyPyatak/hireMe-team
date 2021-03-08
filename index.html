@@ -7,6 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Hire Me</title>
 	<link rel="stylesheet" href="css/style.css" />
+	<script
+		src="https://kit.fontawesome.com/e3e1481f16.js"
+		crossorigin="anonymous">
+	</script>
+	<script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -17,12 +22,12 @@
 			<div class="fixed-menu__line"></div>
 			<div class="fixed-menu__line"></div>
 		</label>
-		<nav class="welcome-menu">
+		<nav class="welcome-menu" id="welcomNav">
 			<div class="welcome-menu__content">
-				<a href="#" class="welcome-menu__item">About Me</a>
-				<a href="#" class="welcome-menu__item">Services</a>
-				<a href="#" class="welcome-menu__item">My Works</a>
-				<a href="#" class="welcome-menu__item">Clients</a>
+				<a href="#sect-about" class="welcome-menu__item" onclick="closeNav()">About Me</a>
+				<a href="#sect-services" class="welcome-menu__item" onclick="closeNav()">Services</a>
+				<a href="#sect-portfolio" class="welcome-menu__item" onclick="closeNav()">My Works</a>
+				<a href="#sect-clients" class="welcome-menu__item" onclick="closeNav()">Clients</a>
 				<a href="#" class="welcome-menu__line"></a>
 				<div href="#" class="welcome-menu__social-links">
 					<a href="#" class="welcome-menu__social-icons"><img src="img/facebook-icon.png" alt=""></a>
@@ -53,11 +58,46 @@
 				dolore
 				magna aliqua. Ut enim ad minim veniam, quis nostrud
 			</div>
-			<a href="#" class="welcome__button">hire me</a>
-			<div class="welcome__arrow-down"></div>
+			<button class="welcome__button button" onclick="openForm()">
+				hire me
+			</button>
+			<div class="welcome__popup-substrate" id="curtain"></div>
+			<div class="welcome__popup-form" id="hireForm">
+				<button
+					type="button"
+					class="welcome__popup-close"
+					onclick="closeForm()"
+				>
+					<i class="fa fa-times"></i>
+				</button>
+				<form action="" method="GET" 		class="popup-form__form form">
+					<h1 class="form__header">Hire Me</h1>
+					<input
+						type="text"
+						class="form__username"
+						placeholder="Your Name"
+						required
+					/>
+					<input
+						type="email"
+						class="form__email"
+						placeholder="Your E-Mail"
+						required
+					/>
+					<input
+						type="textarea"
+						class="form__usermsg"
+						placeholder="Your Message"
+					/>
+					<button type="submit" class="btn form__submit">send message</button>
+				</form>
+			</div>
+			<a href="#sect-about">
+				<div class="welcome__arrow-down"></div>
+			</a>
 		</div>
 	</header>
-	<section class="about-me">
+	<section class="about-me" id="sect-about">
 		<h2 class="about-me__heading">About Me</h2>
 		<p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 			incididunt
@@ -69,7 +109,7 @@
 			qui
 			officia </p>
 	</section>
-	<section class="expert-in">
+	<section class="expert-in" id="sect-services">
 		<div class="expert-in__headline">Expert In</div>
 		<div class="expert-in__items">
 			<div class="expert-item">
@@ -129,7 +169,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="latest-works">
+	<section class="latest-works" id="sect-portfolio">
 		<div class="latest-works__body">
 			<div class="latest-works__title">Latest Works</div>
 			<div class="latest-works__content">
@@ -147,7 +187,7 @@
 		</div>
 		</div>
 	</section>
-	<section class="clients">
+	<section class="clients" id="sect-clients">
 		<div class="clients-content">
 			<div class="clients-content__title">
 				<h2>Clients</h2>
@@ -162,7 +202,9 @@
 	</section>
 	<footer class="footer">
 		<p class="footer__text">Need a graphic designer? <b> Ready to work!</b></p>
-		<a class="footer__button">HIRE ME</a>
+		<button class="footer__button button" onclick="openForm()">
+			hire me
+		</button>
 	</footer>
 </body>
 
