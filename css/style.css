@@ -1472,11 +1472,26 @@ body {
     height: 500px;
     gap: 50px;
   }
+
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer__text {
+    text-align: center;
+  }
+  .footer__button {
+    margin: 0px;
+  }
 }
 @media (max-width: 360px) {
   .about-me {
     height: 600px;
     gap: 30px;
+  }
+
+  .footer__text {
+    font-size: 30px;
   }
 }
 
