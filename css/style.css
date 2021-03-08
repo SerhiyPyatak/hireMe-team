@@ -1269,6 +1269,8 @@ template {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  position: fixed;
+  z-index: 20;
 }
 .cookies-bar__agreement {
   font-weight: 600;
@@ -1319,7 +1321,7 @@ body {
   box-sizing: border-box;
 }
 .about-me__heading {
-  font-size: 34px;
+  font-size: 50px;
   font-family: "Lato";
   color: #3677fd;
   line-height: 0.702;
@@ -1383,7 +1385,7 @@ body {
 }
 .latest-works .latest-works__body .latest-works__title {
   font-family: "Lato";
-  font-size: 34px;
+  font-size: 50px;
   color: #3677FD;
   font-weight: 300;
   text-align: center;
