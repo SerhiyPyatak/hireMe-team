@@ -26,7 +26,6 @@
 	&__header {
 		max-width: 825px;
 		margin: 40px auto;
-
 		// styles from markup
 		font-size: 50px;
 		letter-spacing: 1px;
@@ -65,6 +64,12 @@
 		height: 36px;
 		background: url('../img/welcome-arrow.png') no-repeat center;
 		background-size: contain;
+		//cursor:pointer;
+
+		&:hover {
+			transform:translateY(10px);
+			transition: .2s ease-in-out;
+		}
 	}
 
 }

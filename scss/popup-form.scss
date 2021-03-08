@@ -11,6 +11,7 @@
         padding:            45px 145px;
         box-sizing:         border-box;
         z-index:            9;
+		font-family:        "Lato";
     }
 
     &__popup-close {
@@ -28,10 +29,10 @@
         display:none;
         position:           fixed;
         background-color: rgba(76, 76, 76, .7);
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
+        width: 				100vw;
+        height: 			100vh;
+        top: 				0;
+        left: 				0;
     }
 }
 
@@ -43,7 +44,7 @@
     &__header {
         width:          100%;
         text-align:     center;
-        font-size:      35px;
+        font-size:      40px;
         font-weight:    400;
         letter-spacing: 5px;
         color:          rgb(54, 119, 253);
@@ -57,7 +58,12 @@
         width:          100%;
         margin:         15px 0;
         outline:        none;
+		padding-left: 	23px;
     }
+
+	& input:focus {
+		border-color: rgb(54, 119, 253);
+	}
 
     &__usermsg {
         border:         1px solid rgb(183, 192, 201);
@@ -66,18 +72,46 @@
         width:          100%;
         margin:         15px 0;
         outline:        none;
+		padding-left: 	23px;
     }
 
     &__submit {
-        margin:         45px;
-        width:          205px;
-        height:         55px;
-        border-radius:  25px;
+        margin:         	45px;
+        width:          	205px;
+        height:         	55px;
+        border-radius:  	25px;
         background-color: rgb(53, 110, 253);
-        border: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 600;
+        border: 			none;
+        color: 				#fff;
+        text-transform: 	uppercase;
+        font-size: 			15px;
+        font-weight: 		600;
+        background:         rgb(54,149,255);
+        background:         linear-gradient(90deg, rgba(54,149,255,1) 35%, rgba(53,109,253,1) 90%);
+        cursor:             pointer;
     }
+}
+
+@media(max-width: 860px) {
+	.welcome__popup-form {
+		width:		540px;
+		padding: 	45px 80px;
+	}
+}
+
+@media(max-width: 580px) {
+	.welcome__popup-form {
+		width:		320px;
+		padding: 	15px 40px;
+	}
+
+	.form {
+		&__header {
+			margin: 5px 0;
+		}
+
+		&__submit {
+			margin: 25px;
+		}
+	}
 }

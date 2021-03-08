@@ -10,6 +10,7 @@
   padding: 45px 145px;
   box-sizing: border-box;
   z-index: 9;
+  font-family: "Lato";
 }
 .welcome__popup-close {
   position: relative;
@@ -39,7 +40,7 @@
 .form__header {
   width: 100%;
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 400;
   letter-spacing: 5px;
   color: #3677fd;
@@ -52,6 +53,10 @@
   width: 100%;
   margin: 15px 0;
   outline: none;
+  padding-left: 23px;
+}
+.form input:focus {
+  border-color: #3677fd;
 }
 .form__usermsg {
   border: 1px solid #b7c0c9;
@@ -60,6 +65,7 @@
   width: 100%;
   margin: 15px 0;
   outline: none;
+  padding-left: 23px;
 }
 .form__submit {
   margin: 45px;
@@ -72,6 +78,29 @@
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 600;
+  background: #3695ff;
+  background: linear-gradient(90deg, #3695ff 35%, #356dfd 90%);
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .welcome__popup-form {
+    width: 540px;
+    padding: 45px 80px;
+  }
+}
+@media (max-width: 580px) {
+  .welcome__popup-form {
+    width: 320px;
+    padding: 15px 40px;
+  }
+
+  .form__header {
+    margin: 5px 0;
+  }
+  .form__submit {
+    margin: 25px;
+  }
 }
 
 /*# sourceMappingURL=popup-form.css.map */
