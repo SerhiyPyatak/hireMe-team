@@ -1,0 +1,55 @@
+.popup-form {
+  display: none;
+  width: 820px;
+  height: auto;
+  margin: auto;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 65px 145px;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__header {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #3677fd;
+  margin: 60px 0;
+}
+.form input:not(.form__usermsg) {
+  border: 1px solid #b7c0c9;
+  border-radius: 10px;
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+  outline: none;
+}
+.form__usermsg {
+  border: 1px solid #b7c0c9;
+  border-radius: 10px;
+  height: 180px;
+  width: 100%;
+  margin: 15px 0;
+  outline: none;
+}
+.form__submit {
+  margin: 45px;
+  width: 205px;
+  height: 55px;
+  border-radius: 25px;
+  background-color: #356efd;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=popup-form.css.map */
