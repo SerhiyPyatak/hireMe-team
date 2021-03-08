@@ -62,4 +62,14 @@
   transition: 0.2s ease-in-out;
 }
 
+@media (max-width: 576px) {
+  .welcome {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .welcome__header {
+    font-size: 35px;
+  }
+}
+
 /*# sourceMappingURL=welcome.css.map */

@@ -71,5 +71,14 @@
 			transition: .2s ease-in-out;
 		}
 	}
+}
 
+@media (max-width: 576px) {
+	.welcome {
+		padding-left: 10px;
+		padding-right: 10px;
+		&__header {
+			font-size: 35px;
+		}
+	}
 }
