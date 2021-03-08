@@ -7,10 +7,11 @@
   border: 1px solid #fff;
   background-color: #fff;
   border-radius: 10px;
-  padding: 45px 145px;
+  padding: 25px 145px;
   box-sizing: border-box;
   z-index: 9;
   font-family: "Lato";
+  top: 85px;
 }
 .welcome__popup-close {
   position: relative;

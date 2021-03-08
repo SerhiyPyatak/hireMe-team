@@ -11,3 +11,8 @@ function closeForm() {
 function closeNav() {
     document.getElementById("fixed-menu-check").click();
 }
+
+function closeCookBar() {
+    document.getElementById("coobar").style.visibility = "hidden";
+    document.getElementById("coobar").style.height = "0";
+}
