@@ -53,9 +53,19 @@
 				dolore
 				magna aliqua. Ut enim ad minim veniam, quis nostrud
 			</div>
-			<a href="#" class="welcome__button">hire me</a>
-			<div class="popup-form">
-				<form action="" method="GET" class="popup-form__form form">
+			<button class="welcome__button button" onclick="openForm()">
+				hire me
+			</button>
+			<div class="welcome__popup-substrate" id="curtain"></div>
+			<div class="welcome__popup-form" id="hireForm">
+				<button
+					type="button"
+					class="welcome__popup-close"
+					onclick="closeForm()"
+				>
+					<i class="fa fa-times"></i>
+				</button>
+				<form action="" method="GET" 		class="popup-form__form form">
 					<h1 class="form__header">Hire Me</h1>
 					<input
 						type="text"
@@ -76,6 +86,7 @@
 					/>
 					<button type="submit" class="btn form__submit">send message</button>
 				</form>
+			</div>
 			<div class="welcome__arrow-down"></div>
 		</div>
 	</header>
@@ -184,7 +195,9 @@
 	</section>
 	<footer class="footer">
 		<p class="footer__text">Need a graphic designer? <b> Ready to work!</b></p>
-		<a class="footer__button">HIRE ME</a>
+		<button class="welcome__button button" onclick="openForm()">
+			hire me
+		</button>
 	</footer>
 </body>
 
