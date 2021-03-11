@@ -82,3 +82,12 @@
 		}
 	}
 }
+
+@media (max-width: 880px) {
+	.welcome {
+		&__header,
+		&__description {
+			max-width: 95%;
+		}
+	}
+}
