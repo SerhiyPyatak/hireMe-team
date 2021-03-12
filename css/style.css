@@ -724,6 +724,11 @@ template {
     font-size: 35px;
   }
 }
+@media (max-width: 880px) {
+  .welcome__header, .welcome__description {
+    max-width: 95%;
+  }
+}
 .latest-works {
   margin: 0 auto;
   height: auto;
@@ -1232,10 +1237,11 @@ body {
 .about-me {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   max-width: 2000px;
-  height: 400px;
+  min-height: 500px;
+  height: auto;
   gap: 50px;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -1247,8 +1253,8 @@ body {
   line-height: 0.702;
   text-align: center;
   font-weight: 300;
-  margin: 0px 0px 0px 0px;
   width: 100%;
+  margin-top: 100px;
 }
 .about-me__text {
   font-size: 16px;
@@ -1259,6 +1265,7 @@ body {
   font-weight: 400;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .footer {
@@ -1296,11 +1303,6 @@ body {
   margin: 60px;
 }
 
-.about-me {
-  height: 500px;
-  gap: 50px;
-}
-
 .footer {
   flex-direction: column;
   justify-content: space-around;
@@ -1313,11 +1315,6 @@ body {
 }
 
 @media (max-width: 360px) {
-  .about-me {
-    height: 600px;
-    gap: 30px;
-  }
-
   .footer__text {
     font-size: 30px;
   }
