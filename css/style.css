@@ -1240,7 +1240,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   max-width: 2000px;
-  height: 400px;
+  min-height: 500px;
+  height: auto;
   gap: 50px;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -1264,6 +1265,7 @@ body {
   font-weight: 400;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .footer {
@@ -1299,11 +1301,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 60px;
-}
-
-.about-me {
-  height: 500px;
-  gap: 50px;
 }
 
 .footer {
