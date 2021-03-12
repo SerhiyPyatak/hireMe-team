@@ -1315,11 +1315,6 @@ body {
 }
 
 @media (max-width: 360px) {
-  .about-me {
-    height: 600px;
-    gap: 50px;
-  }
-
   .footer__text {
     font-size: 30px;
   }
